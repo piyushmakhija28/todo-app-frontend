@@ -1,0 +1,25 @@
+<div class="table_component" role="region" tabindex="0">
+  <table>
+    <caption>
+      Task List
+    </caption>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of taskDtoList">
+        <td>{{ task.id }}</td>
+        <td>{{ task.title }}</td>
+        <td>{{ task.description }}</td>
+        <td>{{ task.createdAt }}</td>
+        <td>{{ task.updatedAt }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
